@@ -1,0 +1,118 @@
+﻿TYPES OF ALGORITHMS
+
+             Recursive algorithms
+An algorithm is recursive if it calls itself to solve smaller subproblems of the original problem. 
+The algorithm calls itself multiple times until the base condition is met.
+
+This technique provides you with a powerful solution for solving problems, can limit the amount of
+code, and can be easy to understand and maintain. However, recursion has some drawbacks related to
+performance or the requirement for more space in the stack’s memory, which could lead to stack
+overflow problems. Fortunately, you can prevent some of these issues using dynamic programming,
+an optimization technique that supports recursion.
+
+Recursion can be used in several algorithms, including the following:
+-- Sorting an array with the merge sort and quicksort algorithms
+-- Solving the Towers of Hanoi game
+-- Traversing a tree
+-- Getting a number from the Fibonacci series
+-- Generating fractals
+-- Calculating a factorial (n!)
+-- Getting the greatest common divisor of two numbers using the Euclidean algorithm
+-- Traversing the filesystem with directories and subdirectories
+
+          Divide and conquer algorithms
+
+It is related to the algorithmicparadigm of solving a problem by breaking it down into smaller 
+subproblems (the “divide” step), calling them recursively until they are simple enough to be solved 
+directly (“conquer”), and combining the results of subproblems to get the final result (“combine”).
+This approach has many advantages, also taken from the pros of recursion, including ease of implementation,
+understanding, and maintenance. By dividing the problem into many subproblems, it supports
+parallel computing, which can lead to performance improvements. Unfortunately, this paradigm
+also has some disadvantages, including the necessity for a proper base case definition to terminate the
+execution of the algorithm. Performance issues, similar as in the case of recursive algorithms, can
+exist as well.
+
+Divide and conquer is a popular approach for solving various algorithmic problems and you can see
+its implementations in a broad range of applications:
+-- Sorting an array with the merge sort and quicksort algorithms
+-- Finding the closest pair of points located on the two-dimensional surface
+-- Calculating the power of a number
+-- Finding the minimum and maximum values in an array
+-- Calculating the fast Fourier transform
+-- Multiplying large numbers using Karatsuba’s algorithm
+
+            Back-tracking algorithms
+
+They are used for solving problems that consist of a sequence of decisions, each depending on the decisions 
+that have already been taken, incrementally building the solution. When you realize that the decisions that
+have been taken do not provide the correct solution, you backtrack. Of course, you can support this approach with
+recursion to try various variants and therefore find a suitable solution, if one exists.
+You can use this approach for many tasks, including the following:
+-- Solving the rat in a maze problem
+-- Solving Sudoku
+-- Solving crosswords by entering letters into empty spaces
+-- Solving the eight queens problem of placing eight queens on a chessboard and not allowing them to attack each other
+-- Solving the knight’s tour, where you place a knight on the first block on a chessboard and move it so that it visits all blocks
+   exactly once
+-- Generating gray codes to create bit patterns where the following ones differ by one bit only
+-- Solving the m-coloring problem for graph-related topics
+
+           Greedy algorithms
+
+A greedy algorithm builds the solution piece by piece by choosing the best option in each step, not concerned about the overall
+solution, and being short-sighted in its operation. For this reason, there is no guarantee that the
+final result is optimal. However, in many scenarios, using the local optimal solutions can lead to
+global optimal solutions or can be good enough.
+Here are some examples:
+-- Finding the shortest path in a graph using Dijkstra’s algorithm, 
+-- Calculating the minimum spanning tree in a graph with Kruskal’s algorithm and Prim’s algorithm, 
+--mSolving the minimum coin change problem
+-- The greedy approach to Huffman coding in data compression algorithms
+-- Load balancing and network routing
+
+            Heuristic algorithms
+
+A heuristic algorithm
+calculates a near-optimal solution for an optimization problem and is especially useful for
+scenarios when the exact methods are not available or are too slow. Thus, you can see a
+significant speed boost, but with a decreased accuracy of the result. Such an approach is popular
+and adequate for solving various real-world problems, often complex and big, and is applied in many
+different fields of science, even those regarding bioinformatics.
+Heuristic algorithms have many applications and subtypes:
+-- Genetic algorithms, which are adaptive heuristic search algorithms, and can be used to guess the title of this book,
+-- Solving vehicle routing problems and the traveling salesman problem with the Tabu Search algorithm
+-- Solving the Knapsack problem, where you need to choose items of the maximum total value to be packed within the mass limit
+-- Filtering and processing signals
+-- Detecting viruses
+
+            Dynamic programming
+Since we’re talking about various types of algorithms, it is worth mentioning dynamic
+programming. It is a technique that optimizes recursive algorithms by limiting the necessity of
+computing the same result multiple times. This technique can be used in one of two approaches:
+-- The top-down approach, which uses memoization to save the results of subproblems. Therefore, the algorithm can use the value
+   from the cache and does not need to recalculate the same results multiple times or does not need to call the method with the same
+   parameters multiple times.
+-- The bottom-up approach, which uses tabulation to replace recursion with iteration. It limits the number of function calls and
+   problems regarding stack overflow.
+-- You can also use dynamic programming to find the shortest path between all pairs of vertices in a
+   graph by using the Floyd-Warshall algorithm, as well as in Dijkstra’s algorithm. Another
+   application is for solving the Tower of Hanoi mathematical game. Possibilities are even broader and
+   you can also apply it to artificial neural networks.
+
+           Brute-force algorithms
+While we’re presenting various types of algorithms, we should also consider brute-force algorithms.
+A brute-force algorithm is a general solution for solving a problem by checking all possible
+options and choosing the best one. It is an approach that can have huge time complexity and its
+operation can take a lot of time, so it can be useless in real-world scenarios. However, a brute-force
+algorithm is often the first choice when you need to solve some algorithmic problem. There’s nothing
+bad in doing this as you can learn more about the domain of the problem you wish to solve and see
+some results for simpler cases. Nevertheless, while developing an algorithm, it is a good idea to
+enhance it significantly by using other paradigms.
+Here are some examples of where you can use brute-force algorithms:
+-- Guessing a password, where you check each possible password one after the other
+-- Finding the minimum value in an unsorted array, where you need to iterate through all items as there is no relationship
+   between values in the array
+-- Finding the best possible plan for a day, placing various tasks between meetings, and trying to organize it in a way that you can
+   start working late and ending early
+-- Solving the traveling salesman problem
+
