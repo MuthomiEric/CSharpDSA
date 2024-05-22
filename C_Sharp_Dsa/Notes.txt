@@ -1,0 +1,13 @@
+﻿TYPES OF ARRAYS
+
+Single-dimensional arrays------------------------------------
+
+These are the normal arrays e.g.
+
+int[] arr= new int[5];
+
+
+Array class has many helper methods like foreach to loop through an array
+
+
+Multi-dimensional arrays--------------------------------------
