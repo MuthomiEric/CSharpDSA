@@ -13,3 +13,6 @@ Array class has many helper methods like foreach to loop through an array
 Multi-dimensional arrays--------------------------------------.
 
 You can use GetLength() method to retrieve the length of each dimension dynamically
+
+
+Jagged arrays
