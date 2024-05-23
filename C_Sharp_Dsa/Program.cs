@@ -1,4 +1,5 @@
-﻿using static ClosedXML.Excel.XLPredefinedFormat;
+﻿using C_Sharp_Dsa;
+using static ClosedXML.Excel.XLPredefinedFormat;
 
 namespace ExcelMergeExample
 {
@@ -6,7 +7,7 @@ namespace ExcelMergeExample
     {
         static void Main(string[] args)
         {
-
+            TwoDImensionalArray.Implementation();
         }       
     }
 }
